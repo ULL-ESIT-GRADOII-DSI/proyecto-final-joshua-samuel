@@ -1,0 +1,25 @@
+{
+  "name": "proyectodsi",
+  "version": "0.0.1",
+  "description": "Proyecto final para la asignatura de DSI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Losnen/Proyecto-DSI.git"
+  },
+  "author": "Samuel Ramos Barroso y Joshua Pérez García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Losnen/Proyecto-DSI/issues"
+  },
+  "homepage": "https://github.com/Losnen/Proyecto-DSI#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-ejs-layouts": "^2.1.0",
+    "mongoose": "^4.4.14"
+  }
+}
