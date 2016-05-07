@@ -46,6 +46,9 @@ h1 {
 body {
   background-color: skyblue;
 }
-
+.lit{
+  background-color: green;
+  opacity: 1;
+}
 
 
