@@ -12,12 +12,12 @@ function newRound() {
  var sequence = ['c1','c1s','d1']; //red, green, red
  animate(sequence);
 }
- 
+
 function animate(sequence) {
  var i = 0;
  var interval = setInterval(function() {
  lightUp(sequence[i]);
- 
+
         i++;
         if (i >= sequence.length) {
  clearInterval(interval);
@@ -25,12 +25,12 @@ function animate(sequence) {
    }, 600);
 }
 
-function lightup(tile) {
- var $tile = document.getElementById('c1').addClass('lit');
+function lightUp(tile) {
+ var aux = $('#' + tile).addClass('lit');
  window.setTimeout(function() {
- $tile.removeClass('lit');
+ aux.removeClass('lit');
  }, 300);
- 
+
 }
 function play(key) {
   keys[key].currentTime = 0   // Rebobinamos (y silenciamos el anterior si lo hay)
