@@ -13,3 +13,11 @@ Nuestro proyecto es un piano que tiene varias canciones almacenadas, también gu
   $ mongod
   $ node app.js
 ```
+
+##Tecnologías usadas:
+* Node JS
+* Express
+* EJS
+* MongoDB
+* Mongoose
+* SASS
