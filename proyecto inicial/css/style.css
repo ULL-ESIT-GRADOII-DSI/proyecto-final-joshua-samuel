@@ -3,7 +3,15 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   text-shadow: 0.1em 0.1em white;
 }
-
+.fa-github-square{
+  font-size: 40px;
+}
+.nav-wrapper{
+  background-color: #2196f3;
+}
+#fpiano{
+  margin-top: 40px;
+}
 #piano {
   border: 10px white;
   margin: auto;
@@ -38,3 +46,6 @@ h1 {
 body {
   background-color: skyblue;
 }
+
+
+
