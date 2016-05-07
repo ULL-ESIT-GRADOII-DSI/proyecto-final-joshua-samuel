@@ -9,7 +9,7 @@ for (i = 0; i < notes.length; i++) {
 }
 
 function newRound() {
- var sequence = ['c1','c1s','d1']; //red, green, red
+ var sequence = ['c1','c1','d1','c1','f1','e1','c1','c1','d1','c1','g1','f1']; //red, green, red
  animate(sequence);
 }
 
@@ -22,18 +22,18 @@ function animate(sequence) {
         if (i >= sequence.length) {
  clearInterval(interval);
         }
-   }, 600);
+   }, 1200);
 }
 
 function lightUp(tile) {
  var aux = $('#' + tile).addClass('lit');
  window.setTimeout(function() {
  aux.removeClass('lit');
- }, 300);
+ }, 600);
 
 }
 function play(key) {
   keys[key].currentTime = 0   // Rebobinamos (y silenciamos el anterior si lo hay)
   keys[key].play()            // Reproducimos
-  newRound()
+ // newRound()
 }

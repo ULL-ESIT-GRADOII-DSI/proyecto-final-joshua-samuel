@@ -14,9 +14,7 @@ h1 {
 }
 #piano {
   border: 10px white;
-  margin: auto;
-  width: 600px;
-  margin-right: 200px;
+  width: 750px;
 }
 
 .blanca {
@@ -50,5 +48,8 @@ body {
   background-color: green;
   opacity: 1;
 }
-
+.comenzar{
+  display: flex;
+  justify-content:center;
+}
 
