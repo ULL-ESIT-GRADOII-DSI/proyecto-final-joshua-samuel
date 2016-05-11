@@ -2,10 +2,10 @@
 
 const express = require('express');
 const app = express();
-const path = require('path');
+const path = require('path');var bodyParser = require('body-parser')
 const expressLayouts = require('express-ejs-layouts');
-
 const usu = require('./models/schema_puntuaciones');
+//console.log(usu);
 
 app.set('port', (process.env.PORT || 8080));
 
@@ -19,11 +19,11 @@ app.get('/', (req,res) => {
   res.render('index');
 });
 
-app.get('/puntuaciones/:nombre', (res,req) => {
+app.get('/puntuaciones/:nombre', function(req,res) {
   
   let usr = new usu({
-    "name": req.nombre,
-    "punt": req.query.puntu
+    "name": req.params.nombre,
+    "punt": req.query.punt
   }); 
     
   usr.save(function (err) {

@@ -43,7 +43,11 @@ function play(key) {
 
  $("#guardar").click(() => {
   var p = 0;
-        $.get("/puntuaciones/" + $("#nombre").val(), {
+        console.log($("#nombreusu").val());
+        //app.get('/puntuaciones/:nombre', (res,req)
+        //$.get("/ficheros/" + $("#nombrefich").val(), {
+        $.get("/puntuaciones/" + $("#nombreusu").val(), {
          "punt": p
+         
       });
     });

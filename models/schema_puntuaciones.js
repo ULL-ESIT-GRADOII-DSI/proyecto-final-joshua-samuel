@@ -1,12 +1,18 @@
-var mongoose  = require("mongoose");
-var Schema = mongoose.Schema;
+(function() {
+  "use strict";
+   const util = require('util');
+   var mongoose  = require("mongoose");
+   var Schema = mongoose.Schema;
  
-mongoose.connect("mongodb://localhost/usuarios");
+   mongoose.connect("mongodb://localhost/usuarios");
  
-var userSchema = new Schema({
-   name: String,
-   punt: Number
-});
- 
-var User = mongoose.model("User",userSchema);
-module.export = User;
+   var userSchema = new Schema({
+      name: String,
+      punt: Number
+   });
+    
+   var User = mongoose.model("User",userSchema);
+   
+   module.exports = User;
+   
+})();
