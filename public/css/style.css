@@ -6,6 +6,11 @@ h1 {
 .fa-github-square{
   font-size: 40px;
 }
+
+.fa-github-square:hover{
+  background: none;
+}
+
 .nav-wrapper{
   background-color: #2196f3;
 }
@@ -44,6 +49,7 @@ h1 {
 body {
   background-color: skyblue;
 }
+
 .lit{
   background-color: green;
   opacity: 1;
@@ -51,4 +57,30 @@ body {
 
 .input-field label {
      color: #000;
-   }
+}
+
+#logo
+{
+    font-family: 'Lobster', cursive;
+    margin-left: 15px;
+}   
+   
+::-webkit-input-placeholder { 
+  color:#000; 
+  font-size:10px;
+}
+
+::-moz-placeholder { 
+  color:#000; 
+  font-size:10px;
+} /* firefox 19+ */
+
+:-ms-input-placeholder { 
+  color:#000; 
+  font-size:10px;
+} /* ie */
+
+input:-moz-placeholder { 
+  color:#000; 
+  font-size:10px;
+}

@@ -1,43 +1,46 @@
 <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="https://github.com/Losnen/Proyecto-DSI.git"><i class="fa fa-github-square"></i></a></li>
-      </ul>
-    </div>
-  </nav>
-<div class="container">
-    <div class="row" id="fpiano">
-      <div class="col s8 comenzar">
-        <div id="piano">
-          <div id="c1" class="blanca" onClick="play(this.id)"></div>
-          <div id="c1s" class="negra" onClick="play(this.id)"></div>
-          <div id="d1" class="blanca" onClick="play(this.id)"></div>
-          <div id="d1s" class="negra" onClick="play(this.id)"></div>
-          <div id="e1" class="blanca" onClick="play(this.id)"></div>
-          <div id="f1" class="blanca" onClick="play(this.id)"></div>
-          <div id="f1s" class="negra" onClick="play(this.id)"></div>
-          <div id="g1" class="blanca" onClick="play(this.id)"></div>
-          <div id="g1s" class="negra" onClick="play(this.id)"></div>
-          <div id="a1" class="blanca" onClick="play(this.id)"></div>
-          <div id="a1s" class="negra" onClick="play(this.id)"></div>
-          <div id="b1" class="blanca" onClick="play(this.id)"></div>
-          <div id="c2" class="blanca" onClick="play(this.id)"></div>
+  <div class="nav-wrapper">
+    <a href="#!" id="logo" class="brand-logo">Proyecto DSI 15-16: Piano</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="https://github.com/Losnen/Proyecto-DSI.git"><i class="fa fa-github-square"></i></a></li>
+    </ul>
+  </div>
+</nav>
 
-        </div>
-        
+<div class="container">
+  <div class="row" id="fpiano">
+    <div class="col s8 comenzar">
+      <div id="piano">
+        <div id="c1" class="blanca" onClick="play(this.id)"></div>
+        <div id="c1s" class="negra" onClick="play(this.id)"></div>
+        <div id="d1" class="blanca" onClick="play(this.id)"></div>
+        <div id="d1s" class="negra" onClick="play(this.id)"></div>
+        <div id="e1" class="blanca" onClick="play(this.id)"></div>
+        <div id="f1" class="blanca" onClick="play(this.id)"></div>
+        <div id="f1s" class="negra" onClick="play(this.id)"></div>
+        <div id="g1" class="blanca" onClick="play(this.id)"></div>
+        <div id="g1s" class="negra" onClick="play(this.id)"></div>
+        <div id="a1" class="blanca" onClick="play(this.id)"></div>
+        <div id="a1s" class="negra" onClick="play(this.id)"></div>
+        <div id="b1" class="blanca" onClick="play(this.id)"></div>
+        <div id="c2" class="blanca" onClick="play(this.id)"></div>
+
       </div>
-      <div class="col s4">
-        <div class="input-field col s6">
-          <input placeholder="Introduzca su nombre" id="nombreusu" type="text" class="validate">
-          <label for="nombre">Usuario</label>
-          <a class="waves-effect waves-light btn" id= "guardar" >Guardar</a>
-        
+
+    </div>
+    <div class="col s4">
+      <div class="input-field col s6">
+        <input placeholder="Introduzca su nombre" id="nombreusu" type="text" class="validate">
+        <label for="nombre">Usuario</label>
+        <a class="waves-effect waves-light btn" id="guardar">Guardar</a>
+
       </div>
+    </div>
   </div>
   <div class="row">
-    <div class="col s12 comenzar" >
-      <a class="waves-effect waves-light btn" onClick="newRound()">Tocar</a>
+    <div class="col s12 comenzar">
+      <button class="waves-effect waves-light btn" onClick="newRound()">Tocar</button>
     </div>
   </div>
+
 </div>
