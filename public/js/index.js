@@ -22,14 +22,14 @@ function animate(sequence) {
         if (i >= sequence.length) {
  clearInterval(interval);
         }
-   }, 1200);
+   }, 1000);
 }
 
 function lightUp(tile) {
  var aux = $('#' + tile).addClass('lit');
  window.setTimeout(function() {
  aux.removeClass('lit');
- }, 600);
+ }, 400);
 
 }
 function play(key) {

@@ -49,3 +49,6 @@ body {
   opacity: 1;
 }
 
+.input-field label {
+     color: #000;
+   }
