@@ -25,6 +25,9 @@ function animate(sequence) {
    }, 1000);
 }
 
+
+
+
 function lightUp(tile) {
  var aux = $('#' + tile).addClass('lit');
  window.setTimeout(function() {
@@ -37,3 +40,10 @@ function play(key) {
   keys[key].play()            // Reproducimos
  // newRound()
 }
+
+ $("#guardar").click(() => {
+  var p = 0;
+        $.get("/puntuaciones/" + $("#nombre").val(), {
+         "punt": p
+      });
+    });
