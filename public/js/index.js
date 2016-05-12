@@ -53,5 +53,9 @@ function play(key) {
     
 $("#canciones").click(function(e) {
   console.log(e.target.id);
-  newRound(e.target.id);
+  if(e.target.id=='cumple'){
+     newRound(cumple);
+  }else if(e.target.id=='can1'){
+   newRound(can1);
+  }
 });
