@@ -1,14 +1,13 @@
-var notes = ['c1', 'c1s', 'd1', 'd1s', 'e1', 'f1', 'f1s', 'g1', 'g1s', 'a1', 'a1s', 'b1', 'c2']
+var notes = ['c1', 'c1s', 'd1', 'd1s', 'e1', 'f1', 'f1s', 'g1', 'g1s', 'a1', 'a1s', 'b1', 'c2'];
 var cumple = ['c1','c1','d1','c1','f1','e1','c1','c1','d1','c1','g1','f1']; 
 var can1 = ['d1','c1'];
 var p = 0;
 
-var keys = {}
-var piano = document.getElementById('piano')
+var keys = {};
 
 // Preload audio
 for (i = 0; i < notes.length; i++) {
-  keys[notes[i]] = new Audio('https://github.com/pffy/mp3-piano-sound/blob/master/mp3/'+ notes[i] +'.mp3?raw=true')
+  keys[notes[i]] = new Audio('https://github.com/pffy/mp3-piano-sound/blob/master/mp3/'+ notes[i] +'.mp3?raw=true');
 }
 
 function newRound(sequence) {
@@ -35,8 +34,8 @@ function lightUp(tile) {
 }
 
 function play(key) {
-  keys[key].currentTime = 0   // Rebobinamos (y silenciamos el anterior si lo hay)
-  keys[key].play()            // Reproducimos
+  keys[key].currentTime = 0;   // Rebobinamos (y silenciamos el anterior si lo hay)
+  keys[key].play();            // Reproducimos
 }
 
 $("#guardar").click(() => {

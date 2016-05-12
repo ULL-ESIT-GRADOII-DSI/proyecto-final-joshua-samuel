@@ -34,3 +34,4 @@ node_modules
 
 data
 mongod
+bower_components

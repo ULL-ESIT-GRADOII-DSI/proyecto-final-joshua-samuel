@@ -1,0 +1,29 @@
+{
+  "name": "DSI",
+  "description": "Proyecto final para la asignatura de DSI",
+  "main": "app.js",
+  "authors": [
+    "Samuel Ramos Barroso y Joshua Pérez García"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Materialize",
+    "CSS",
+    "JS",
+    "HTML",
+    "MongoDB",
+    "NodeJS"
+  ],
+  "homepage": "https://github.com/Losnen/Proyecto-DSI",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6",
+    "jquery": "^2.2.3"
+  }
+}
