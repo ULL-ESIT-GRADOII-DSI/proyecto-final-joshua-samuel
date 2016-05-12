@@ -9,6 +9,7 @@ Nuestro proyecto es un piano que tiene varias canciones almacenadas, también gu
 
 ##Tutorial de instalación
 ```
+  $ git clone git@github.com:Losnen/Proyecto-DSI.git
   $ npm install
   $ mongod
   $ node app.js
@@ -21,3 +22,4 @@ Nuestro proyecto es un piano que tiene varias canciones almacenadas, también gu
 * MongoDB
 * Mongoose
 * SASS
+* Bower
