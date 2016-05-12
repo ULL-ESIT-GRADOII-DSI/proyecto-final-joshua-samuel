@@ -1,8 +1,3 @@
-h1 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 0.1em 0.1em white;
-}
 .fa-github-square{
   font-size: 40px;
 }
@@ -14,6 +9,7 @@ h1 {
 .nav-wrapper{
   background-color: #2196f3;
 }
+
 #fpiano{
   margin-top: 40px;
 }
@@ -56,13 +52,13 @@ body {
 }
 
 .input-field label {
-     color: #000;
+   color: #000;
 }
 
 #logo
 {
-    font-family: 'Lobster', cursive;
-    margin-left: 15px;
+  font-family: 'Lobster', cursive;
+  margin-left: 15px;
 }   
    
 ::-webkit-input-placeholder { 
@@ -83,4 +79,22 @@ body {
 input:-moz-placeholder { 
   color:#000; 
   font-size:10px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  flex: 1 0 auto;
+}
+
+.page-footer{
+  background-color: #2196f3;
+}
+
+#relleno {
+  height: 100px;
 }

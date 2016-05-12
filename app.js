@@ -5,7 +5,6 @@ const app = express();
 const path = require('path');var bodyParser = require('body-parser')
 const expressLayouts = require('express-ejs-layouts');
 const usu = require('./models/schema_puntuaciones');
-//console.log(usu);
 
 app.set('port', (process.env.PORT || 8080));
 
