@@ -1,5 +1,4 @@
 //Dependencias
-
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -8,6 +7,10 @@ var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var jscs = require('gulp-jscs');
 var nodemon = require('gulp-nodemon');
+var sass = require('gulp-sass');
+
+//Tarea default
+gulp.task('default', ['nodemon']);
 
 
 //Tarea jshintjs
@@ -27,7 +30,7 @@ gulp.task('lintjscs', function() {
 //Tarea Browser-sync
 gulp.task('browser-sync', ['nodemon'], () => {
   browserSync.init(null, {
-    proxy: 'http://localhost:3000',
+    proxy: 'http://localhost:8080',
     files: ['views/*.ejs','public/js/*.js','public/css/*.css'],
     port: 8080
   });
@@ -46,3 +49,9 @@ gulp.task('nodemon',function(cb) {
   });
 });
 
+//Tarea SASS
+gulp.task('sass', function () {
+  return gulp.src('./public/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./public/css'));
+});
