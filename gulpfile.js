@@ -8,20 +8,22 @@ var stylish = require('jshint-stylish');
 var jscs = require('gulp-jscs');
 var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
 
 //Tarea default
 gulp.task('default', ['nodemon']);
 
 
 //Tarea jshintjs
-gulp.task('lintjs', function() {
+gulp.task('lint:jshint', function() {
   return gulp.src('./public/js/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))
 });
 
 //Tarea lintcss
-gulp.task('lintjscs', function() {
+gulp.task('lint:jscs', function() {
     return gulp.src('./public/js/*.js')
         .pipe(jscs())
         .pipe(jscs.reporter());
@@ -54,4 +56,19 @@ gulp.task('sass', function () {
   return gulp.src('./public/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/css'));
+});
+
+//Tarea JS min
+gulp.task('min:js', function () {
+  gulp.src('./public/js/*.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('./public/minified'));
+});
+
+//Tarea CSS min
+gulp.task('min:css', function () {
+	gulp.src('./public/css/*.css')
+		.pipe(cssmin())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('./public/minified'));
 });
