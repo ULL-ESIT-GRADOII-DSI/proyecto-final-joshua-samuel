@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-cssmin": "^0.1.7",
@@ -36,6 +37,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "jshint": "^2.9.2",
-    "jshint-stylish": "^2.2.0"
+    "jshint-stylish": "^2.2.0",
+    "mocha": "^2.4.5"
   }
 }

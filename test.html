@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../bower_components/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <!-- Blanket -->
+  <script src="vendor/blanket.min.js" data-cover-adapter="vendor/mocha-blanket.js" data-cover-flags="debug"></script>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <!-- Mocha - Chai -->
+  <script src="./bower_components/chai/chai.js"></script>
+  <script src="./bower_components/mocha/mocha.js"></script>
+  <!-- Script desarrollado por nosotros -->
+  <script src="./public/js/index.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <!-- Script con los test desarrollado por nosotros -->
+  <script src="./test/test.js"></script>
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>

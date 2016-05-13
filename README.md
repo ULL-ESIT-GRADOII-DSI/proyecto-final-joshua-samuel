@@ -11,6 +11,7 @@ Nuestro proyecto es un piano que tiene varias canciones almacenadas, también gu
 ```
   $ git clone git@github.com:Losnen/Proyecto-DSI.git
   $ npm install
+  $ npm install -g bower
   $ bower install
   $ mongod
   $ node app.js
