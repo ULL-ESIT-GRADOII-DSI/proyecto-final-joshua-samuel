@@ -1,7 +1,5 @@
 //Dependencias
 var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
@@ -10,6 +8,9 @@ var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
+var jsmin = require('gulp-jsmin');
+var minifyejs = require('gulp-minify-ejs');
+
 
 //Tarea default
 gulp.task('default', ['nodemon']);
@@ -61,14 +62,23 @@ gulp.task('sass', function () {
 //Tarea JS min
 gulp.task('min:js', function () {
   gulp.src('./public/js/*.js')
-  .pipe(uglify())
-  .pipe(gulp.dest('./public/minified'));
+	.pipe(jsmin())
+	.pipe(rename({suffix: '.min'}))
+	.pipe(gulp.dest('./public/minified'));
 });
 
 //Tarea CSS min
 gulp.task('min:css', function () {
 	gulp.src('./public/css/*.css')
-		.pipe(cssmin())
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest('./public/minified'));
+	.pipe(cssmin())
+	.pipe(rename({suffix: '.min'}))
+	.pipe(gulp.dest('./public/minified'));
 });
+
+//Tarea EJS min
+gulp.task('min:ejs', function() {
+  return gulp.src('./views/*.ejs')
+  .pipe(minifyejs())
+  .pipe(rename({suffix:".min"}))
+	.pipe(gulp.dest('./public/minified'));
+})
