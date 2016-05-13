@@ -10,7 +10,7 @@ var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var jsmin = require('gulp-jsmin');
 var minifyejs = require('gulp-minify-ejs');
-
+var clean = require('gulp-clean');
 
 //Tarea default
 gulp.task('default', ['nodemon']);
@@ -82,3 +82,9 @@ gulp.task('min:ejs', function() {
   .pipe(rename({suffix:".min"}))
 	.pipe(gulp.dest('./public/minified'));
 })
+
+//Tarea clean
+gulp.task('clean', function () {
+	return gulp.src('./public/minified/*.*', {read: false})
+		.pipe(clean());
+});

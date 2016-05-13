@@ -26,6 +26,7 @@
   "devDependencies": {
     "browser-sync": "^2.12.8",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-cssmin": "^0.1.7",
     "gulp-jscs": "^3.0.2",
     "gulp-jshint": "^2.0.1",
