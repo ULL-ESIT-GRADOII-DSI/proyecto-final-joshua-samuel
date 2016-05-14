@@ -40,6 +40,7 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-mocha": "^1.0.1",
