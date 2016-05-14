@@ -25,7 +25,7 @@ module.exports = function(config) {
       './public/js/index.js',
       './bower_components/chai/chai.js',
       './bower_components/mocha/mocha.css',
-      './bower_components/mocha/mocha.js',
+      './bower_components/mocha/mocha.js'
     ],
 
 
