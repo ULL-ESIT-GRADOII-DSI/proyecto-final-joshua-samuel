@@ -32,6 +32,7 @@ function animate(sequence) {
      clearInterval(interval);
     }
   }, 1000);
+  return interval;
 }
 
 function lightUp(tile) {

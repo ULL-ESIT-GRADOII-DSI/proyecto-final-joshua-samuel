@@ -4,7 +4,7 @@
   "description": "Proyecto final para la asignatura de DSI",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,12 @@
     "gulp-sass": "^2.3.1",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
-    "mocha": "^2.4.5"
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.0.1",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.7"
   }
 }
