@@ -11,8 +11,16 @@ for (i = 0; i < notes.length; i++) {
 }
 
 function newRound(sequence) {
-  console.log(sequence);
   animate(sequence);
+}
+
+function puntuacion(key){
+  for(var i = 0; i<cumple.length; i++)
+  {
+    if(key == cumple[i]){
+      return (p + 1);
+    }
+  }
 }
 
 function animate(sequence) {
@@ -35,7 +43,10 @@ function lightUp(tile) {
 
 function play(key) {
   keys[key].currentTime = 0;   // Rebobinamos (y silenciamos el anterior si lo hay)
-  keys[key].play();            // Reproducimos
+  keys[key].play();// Reproducimos
+  if(puntuacion(key) != undefined)
+    p = puntuacion(key);
+  console.log(p);
 }
 
 $("#guardar").click(() => {
@@ -50,7 +61,6 @@ $("#piano").click(function(e) {
 });  
     
 $("#canciones").click(function(e) {
-  console.log(e.target.id);
   if(e.target.id=='cumple'){
      newRound(cumple);
   }else if(e.target.id=='can1'){

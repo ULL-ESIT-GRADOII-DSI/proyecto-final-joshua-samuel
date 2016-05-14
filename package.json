@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Losnen/Proyecto-DSI#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
+    "bower": "^1.7.9",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "express-ejs-layouts": "^2.1.0",
