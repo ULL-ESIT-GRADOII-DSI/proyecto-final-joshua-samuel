@@ -60,15 +60,11 @@ gulp.task('sass', function () {
 });
 
 //Tarea JS min
-gulp.task('min:js', function () {
+gulp.task('min', function () {
   gulp.src('./public/js/*.js')
 	.pipe(jsmin())
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('./public/minified'));
-});
-
-//Tarea CSS min
-gulp.task('min:css', function () {
 	gulp.src('./public/css/*.css')
 	.pipe(cssmin())
 	.pipe(rename({suffix: '.min'}))
