@@ -50,21 +50,24 @@ function play(key) {
   console.log(p);
 }
 
-$("#guardar").click( function() {
-  console.log($("#nombreusu").val());
-   $.get("/puntuaciones/" + $("#nombreusu").val(), {
-   "punt": p
-   });
-});
-    
-$("#piano").click(function(e) {
-  play(e.target.id);
-});  
-    
-$("#canciones").click(function(e) {
-  if(e.target.id === 'cumple'){
-     newRound(cumple);
-  }else if(e.target.id === 'can1'){
-   newRound(can1);
-  }
+$(document).ready( function() {
+
+  $("#guardar").click( function() {
+    console.log($("#nombreusu").val());
+     $.get("/puntuaciones/" + $("#nombreusu").val(), {
+     "punt": p
+     });
+  });
+      
+  $("#piano").click(function(e) {
+    play(e.target.id);
+  });  
+      
+  $("#canciones").click(function(e) {
+    if(e.target.id === 'cumple'){
+       newRound(cumple);
+    }else if(e.target.id === 'can1'){
+     newRound(can1);
+    }
+  });
 });
