@@ -4,7 +4,7 @@
   "description": "Proyecto final para la asignatura de DSI",
   "main": "app.js",
   "scripts": {
-    "test": "mocha test"
+    "test": ""
   },
   "repository": {
     "type": "git",
