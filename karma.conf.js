@@ -20,14 +20,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test.html',
-      'bower_components/jquery/dist/jquery.min.js',
-      'public/js/index.js',
-      'vendor/blanket.js',
-      'vendor/mocha-blanket.js',
-      'bower_components/chai/chai.js',
-      'bower_components/mocha/mocha.css',
-      'bower_components/mocha/mocha.js',
+      './test.html',
+      './bower_components/jquery/dist/jquery.min.js',
+      './public/js/index.js',
+      './vendor/blanket.js',
+      './vendor/mocha-blanket.js',
+      './bower_components/chai/chai.js',
+      './bower_components/mocha/mocha.css',
+      './bower_components/mocha/mocha.js',
     ],
 
 
