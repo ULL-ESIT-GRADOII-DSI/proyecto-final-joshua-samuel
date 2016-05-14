@@ -4,7 +4,7 @@
   "description": "Proyecto final para la asignatura de DSI",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start"
+    "test": "./node_modules/karma/bin/karma start --single-run"
   },
   "repository": {
     "type": "git",
