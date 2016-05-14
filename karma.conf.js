@@ -21,6 +21,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       './test.html',
+      './test/test.js',
       './bower_components/jquery/dist/jquery.min.js',
       './public/js/index.js',
       './bower_components/chai/chai.js',
