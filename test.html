@@ -7,15 +7,13 @@
   </head>
   <body>
     <div id="mocha"></div>
-    <!-- Blanket -->
-    <script src="./vendor/blanket.min.js" data-cover-adapter="./vendor/mocha-blanket.js" data-cover-flags="debug"></script>
     <!-- JQuery -->
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Mocha - Chai -->
     <script src="./bower_components/chai/chai.js"></script>
     <script src="./bower_components/mocha/mocha.js"></script>
     <!-- Script desarrollado por nosotros -->
-    <script src="./public/js/index.js" data-cover></script>
+    <script src="./public/js/index.js"></script>
     <script>mocha.setup('bdd')</script>
     <!-- Script con los test desarrollado por nosotros -->
     <script src="./test/test.js"></script>

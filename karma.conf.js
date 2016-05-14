@@ -23,8 +23,6 @@ module.exports = function(config) {
       './test.html',
       './bower_components/jquery/dist/jquery.min.js',
       './public/js/index.js',
-      './vendor/blanket.js',
-      './vendor/mocha-blanket.js',
       './bower_components/chai/chai.js',
       './bower_components/mocha/mocha.css',
       './bower_components/mocha/mocha.js',
