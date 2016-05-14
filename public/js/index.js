@@ -50,7 +50,7 @@ function play(key) {
   console.log(p);
 }
 
-$("#guardar").click(() => {
+$("#guardar").click( function() {
   console.log($("#nombreusu").val());
    $.get("/puntuaciones/" + $("#nombreusu").val(), {
    "punt": p
