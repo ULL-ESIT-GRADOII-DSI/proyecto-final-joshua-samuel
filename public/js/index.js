@@ -17,7 +17,7 @@ function newRound(sequence) {
 function puntuacion(key){
   for(var i = 0; i<cumple.length; i++)
   {
-    if(key == cumple[i]){
+    if(key === cumple[i]){
       return (p + 1);
     }
   }
@@ -45,7 +45,7 @@ function lightUp(tile) {
 function play(key) {
   keys[key].currentTime = 0;   // Rebobinamos (y silenciamos el anterior si lo hay)
   keys[key].play();// Reproducimos
-  if(puntuacion(key) != undefined)
+  if(puntuacion(key) !== undefined)
     p = puntuacion(key);
   console.log(p);
 }
@@ -62,9 +62,9 @@ $("#piano").click(function(e) {
 });  
     
 $("#canciones").click(function(e) {
-  if(e.target.id=='cumple'){
+  if(e.target.id === 'cumple'){
      newRound(cumple);
-  }else if(e.target.id=='can1'){
+  }else if(e.target.id === 'can1'){
    newRound(can1);
   }
 });
