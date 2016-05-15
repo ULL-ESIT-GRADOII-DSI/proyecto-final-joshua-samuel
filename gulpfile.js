@@ -33,9 +33,9 @@ gulp.task('lint:jscs', function() {
 //Tarea Browser-sync
 gulp.task('browser-sync', ['nodemon'], () => {
   browserSync.init(null, {
-    proxy: 'http://localhost:8080',
+    proxy: 'http://localhost:3000',
     files: ['views/*.ejs','public/js/*.js','public/css/*.css'],
-    port: 8080
+    port: 2121
   });
 });
 
