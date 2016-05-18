@@ -72,7 +72,9 @@ $(document).ready( function() {
   });
   
   $("#mostrar_punt").click(function() {
-    
+    $.get("/mostrar", {
+      
+    });
   });
   
 });

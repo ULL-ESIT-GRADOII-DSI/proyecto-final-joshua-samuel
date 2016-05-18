@@ -19,6 +19,10 @@ app.get('/', function(req,res) {
   res.render('index');
 });
 
+app.get('/puntu', function(req,res) {
+  res.render('punt');
+});
+
 app.get('/puntuaciones/:nombre', function(req,res) {
   
   let usr = new usu({
