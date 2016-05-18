@@ -70,4 +70,9 @@ $(document).ready( function() {
      newRound(can1);
     }
   });
+  
+  $("#mostrar_punt").click(function() {
+    
+  });
+  
 });

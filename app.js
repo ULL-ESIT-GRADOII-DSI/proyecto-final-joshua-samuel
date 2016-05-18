@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const path = require('path');var bodyParser = require('body-parser')
+const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 const usu = require('./models/schema_puntuaciones');
 
@@ -15,7 +15,7 @@ app.use(expressLayouts);
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/bower_components'));
 
-app.get('/', (req,res) => {
+app.get('/', function(req,res) {
   res.render('index');
 });
 
@@ -37,6 +37,18 @@ app.get('/puntuaciones/:nombre', function(req,res) {
     
 });
 
-app.listen(app.get('port'), () => {
+app.get('/mostrar', function(req, res){
+  
+    usu.find({}, function(err, data){
+      
+      if(err) throw err;
+      
+      console.log(data);
+      
+    });
+    
+});
+
+app.listen(app.get('port'), function() {
     console.log(`Node app is running at localhost: ${app.get('port')}` );
 });
