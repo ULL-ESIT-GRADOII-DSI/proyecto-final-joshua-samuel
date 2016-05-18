@@ -48,6 +48,7 @@ app.get('/mostrar', function(req, res){
       if(err) throw err;
       
       console.log(data);
+      res.send(data);
       
     });
     

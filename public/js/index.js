@@ -71,8 +71,29 @@ $(document).ready( function() {
   });
   
   $("#mostrar_punt").click(function() {
-    $.get("/mostrar", {
+    $.get("/mostrar", {}, function (data) {
       
+      if ($("#tt").hasClass('esconder')) {
+        $("#tt").removeClass("esconder"); 
+      }
+      
+      for(var i = 0; i < 4; i++){
+        if(data[i]){
+          var fila = '<tr><td>' + data[i].name + '</td><td>' + data[i].punt + '</td></tr>'
+          $('#tabla_p').append(fila);
+          console.log(data[i].name);
+          console.log(data[i].punt);
+        }
+      }
+      /*
+       $.get("/descfich", {}, (data) => {
+    for (var i = 0; i < 4; i++) {
+      if (data[i]) {
+        $('button.example').get(i).className = "example";
+        $('button.example').get(i).textContent = data[i].name;
+      }     
+    }
+});*/
     });
   });
   
