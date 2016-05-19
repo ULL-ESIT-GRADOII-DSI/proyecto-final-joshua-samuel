@@ -1,0 +1,120 @@
+$enlinea: inline-block;
+$diezpx: 10px;
+$cuarentapx: 40px;
+$centro: center;
+
+.fa-github-square{
+  font-size: $cuarentapx;
+}
+
+.fa-github-square:hover{
+  background: none;
+}
+
+.nav-wrapper{
+  background-color: #2196f3;
+}
+
+#fpiano{
+  margin-top:$cuarentapx;
+}
+#piano {
+  border: $diezpx white;
+  width: 750px;
+}
+
+.blanca {
+  margin: auto;
+  border: 2px black;
+  width: $cuarentapx;
+  height: 125px;
+  background-color: white;
+  display: $enlinea;
+  box-shadow: 0 5px 2px black;
+}
+
+.negra {
+  margin: auto;
+  vertical-align: top;
+  border: 1px white;
+  width: 25px;
+  height: 75px;
+  display: $enlinea;
+  background-color: black;
+  box-shadow: 0 2px 2px grey;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+
+body {
+  background-color: skyblue;
+}
+
+.lit{
+  background-color: green;
+  opacity: 1;
+}
+
+.input-field label {
+   color: #000;
+}
+
+#logo
+{
+  font-family: 'Lobster', cursive;
+  margin-left: 15px;
+}   
+   
+::-webkit-input-placeholder { 
+  color:#000; 
+  font-size:$diezpx;
+}
+
+::-moz-placeholder { 
+  color:#000; 
+  font-size:$diezpx;
+} /* firefox 19+ */
+
+:-ms-input-placeholder { 
+  color:#000; 
+  font-size:$diezpx;
+} /* ie */
+
+input:-moz-placeholder { 
+  color:#000; 
+  font-size:$diezpx;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  flex: 1 0 auto;
+}
+
+.page-footer{
+  background-color: #2196f3;
+}
+
+#relleno {
+  height: 130px;
+}
+
+#copy{
+  text-align:$centro;
+}
+
+.esconder{
+  visibility:collapse;
+}
+
+tabla {
+  text-align:$centro;
+}
+#relleno2 {
+  height: $diezpx;
+}

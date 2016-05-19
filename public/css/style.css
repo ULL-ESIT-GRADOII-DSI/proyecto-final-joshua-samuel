@@ -1,22 +1,18 @@
-.fa-github-square{
-  font-size: 40px;
-}
+.fa-github-square {
+  font-size: 40px; }
 
-.fa-github-square:hover{
-  background: none;
-}
+.fa-github-square:hover {
+  background: none; }
 
-.nav-wrapper{
-  background-color: #2196f3;
-}
+.nav-wrapper {
+  background-color: #2196f3; }
 
-#fpiano{
-  margin-top: 40px;
-}
+#fpiano {
+  margin-top: 40px; }
+
 #piano {
   border: 10px white;
-  width: 750px;
-}
+  width: 750px; }
 
 .blanca {
   margin: auto;
@@ -25,8 +21,7 @@
   height: 125px;
   background-color: white;
   display: inline-block;
-  box-shadow: 0 5px 2px black;
-}
+  box-shadow: 0 5px 2px black; }
 
 .negra {
   margin: auto;
@@ -39,77 +34,62 @@
   box-shadow: 0 2px 2px grey;
   margin-left: -15px;
   margin-right: -15px;
-  position: relative;
-}
+  position: relative; }
 
 body {
-  background-color: skyblue;
-}
+  background-color: skyblue; }
 
-.lit{
+.lit {
   background-color: green;
-  opacity: 1;
-}
+  opacity: 1; }
 
 .input-field label {
-   color: #000;
-}
+  color: #000; }
 
-#logo
-{
+#logo {
   font-family: 'Lobster', cursive;
-  margin-left: 15px;
-}   
-   
-::-webkit-input-placeholder { 
-  color:#000; 
-  font-size:10px;
-}
+  margin-left: 15px; }
 
-::-moz-placeholder { 
-  color:#000; 
-  font-size:10px;
-} /* firefox 19+ */
+::-webkit-input-placeholder {
+  color: #000;
+  font-size: 10px; }
 
-:-ms-input-placeholder { 
-  color:#000; 
-  font-size:10px;
-} /* ie */
+::-moz-placeholder {
+  color: #000;
+  font-size: 10px; }
 
-input:-moz-placeholder { 
-  color:#000; 
-  font-size:10px;
-}
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: #000;
+  font-size: 10px; }
+
+/* ie */
+input:-moz-placeholder {
+  color: #000;
+  font-size: 10px; }
 
 body {
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 footer {
-  flex: 1 0 auto;
-}
+  flex: 1 0 auto; }
 
-.page-footer{
-  background-color: #2196f3;
-}
+.page-footer {
+  background-color: #2196f3; }
 
 #relleno {
-  height: 130px;
-}
+  height: 130px; }
 
-#copy{
-  text-align:center;
-}
+#copy {
+  text-align: center; }
 
-.esconder{
-  visibility:collapse;
-}
+.esconder {
+  visibility: collapse; }
 
 tabla {
-  text-align:center;
-}
+  text-align: center; }
+
 #relleno2 {
-  height: 10px;
-}
+  height: 10px; }
