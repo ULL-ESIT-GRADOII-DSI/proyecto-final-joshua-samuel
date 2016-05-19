@@ -85,15 +85,6 @@ $(document).ready( function() {
           console.log(data[i].punt);
         }
       }
-      /*
-       $.get("/descfich", {}, (data) => {
-    for (var i = 0; i < 4; i++) {
-      if (data[i]) {
-        $('button.example').get(i).className = "example";
-        $('button.example').get(i).textContent = data[i].name;
-      }     
-    }
-});*/
     });
   });
   
