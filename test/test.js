@@ -1,14 +1,6 @@
 var expect = chai.expect;
 
 describe("Piano", function() {
-    
-    describe("#Puntuacion", function() {
-        it("Debería incrementarse", function() {
-            var t = puntuacion("c1");
-            expect(t).to.equal(1);
-        });
-    
-    });
    
    describe("#newRound", function() {
         it("Deberia setear los intervalos", function() {
