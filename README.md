@@ -18,21 +18,23 @@ Nuestro proyecto es un piano que tiene varias canciones almacenadas, también gu
 ```
 
 ##Tecnologías usadas:
-#### Node JS
+####Node.js
+Node.js es un entorno JavaScript de lado de servidor que utiliza un modelo asíncrono y dirigido por eventos.
 
-* Express
+####Express
+Infraestructura web rápida, minimalista y flexible para Node.js.
 
-* EJS
-* MongoDB
-* Mongoose
-* SASS
-* Bower
-* Gulp
- 
-####Karma 
+####EJS
+EJS es un motor de vistas para Node.js.
 
-  Karma se encarga de ejecutar los test de Javascript según se vayan construyendo, de tal forma que ante cualquier fallo el desarrollador se dará cuenta de inmediato.
+####MongoDB y Mongoose
+Es una base de datos ágil que permite a los esquemas cambiar rápidamente cuando las aplicaciones evolucionan.
 
-* Travis
-* Mocha
+####SASS
+SASS es un preprocesador de hojas de estilos.
 
+####Bower
+Bower es un gestor de paquetes para librerías, frameworks y plugins.
+
+####Gulp
+Gulp es un build system(sistema de construcción) que permite automatizar tareas comunes de desarrollo, tales como la minificación de código JavaScript, recarga del navegador, compresión de imágenes, validación de sintaxis de código y un sin fin de tareas más.
