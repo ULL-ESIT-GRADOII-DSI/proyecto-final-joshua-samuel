@@ -18,11 +18,21 @@ Nuestro proyecto es un piano que tiene varias canciones almacenadas, también gu
 ```
 
 ##Tecnologías usadas:
-* Node JS
+#### Node JS
+
 * Express
+
 * EJS
 * MongoDB
 * Mongoose
 * SASS
 * Bower
 * Gulp
+ 
+####Karma 
+
+  Karma se encarga de ejecutar los test de Javascript según se vayan construyendo, de tal forma que ante cualquier fallo el desarrollador se dará cuenta de inmediato.
+
+* Travis
+* Mocha
+
