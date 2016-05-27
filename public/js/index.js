@@ -76,10 +76,10 @@ $(document).ready( function() {
       if ($("#tt").hasClass('esconder')) {
         $("#tt").removeClass("esconder"); 
       }
-      
-      for(var i = 0; i < 4; i++){
+      $('#tabla_p').empty();
+      for(var i = 0; i < data.length; i++){
         if(data[i]){
-          var fila = '<tr><td>' + data[i].name + '</td><td>' + data[i].punt + '</td></tr>'
+          var fila = '<tr><td>' + data[i].name + '</td><td>' + data[i].punt + '</td></tr>';
           $('#tabla_p').append(fila);
           console.log(data[i].name);
           console.log(data[i].punt);
